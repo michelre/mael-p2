@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
   font-family: 'Raleway', sans-serif;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -58,10 +59,17 @@ a {
   color: var(--main-bg-color)
 }
 
+
+/*** Formulaire *****/
+.search-form button i {
+  display: none;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
   display: flex;
   justify-content: space-between;
+  min-height: 1000px;
 }
 
 .hebergements-and-populaires section {
@@ -75,6 +83,29 @@ a {
 .hebergements {
   width: 65%;
 }
+
+/*.hebergements ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}*/
+
+.hebergements ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.hebergements ul li{
+  width: calc(33% - 30px);
+}
+
 
 /****** Populaires ***********/
 .populaires {
@@ -121,6 +152,11 @@ a {
   margin-bottom: 5px;
 }
 
+/*** Activités ***/
+#activites {
+  min-height: 1000px;
+}
+
 
 
 
@@ -135,7 +171,7 @@ a {
 
   .hebergements {
       width: 100%;
-  }
+  }  
 
   .populaires {
       width: 100%;
@@ -163,5 +199,24 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-  /* ... */
+  /*.hebergements ul {
+    grid-template-columns: 1fr;
+  }*/
+
+  .hebergements ul{
+    gap: 0;
+  }
+
+  .hebergements ul li{
+    width: 100%;
+  }
+
+  /*** Formulaire *****/
+  .search-form button i {
+    display: block;
+  }
+
+  .search-form button span {
+    display: none;
+  }
 }

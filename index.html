@@ -16,11 +16,36 @@
 
 <body>
     <div class="main-container">
-        <header></header>
+        <header>
+            <ul>
+                <li>
+                    <a href="#hebergements">Hébergements</a>
+                </li>
+                <li>
+                    <a href="#activites">Activités</a>
+                </li>
+            </ul>
+        </header>
         <main>
+            <form class="search-form">
+                <input type="text" placeholder="Marseille, France">
+                <button>
+                    <span>Rechercher</span>
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
             <div class="hebergements-and-populaires">
-                <section class="hebergements">
-
+                <section class="hebergements" id="hebergements">
+                    <h2>Hébergements à Marseille</h2>
+                    <ul class="hebergements-liste">
+                        <li>Hôtel du port</li>
+                        <li>Hôtel du port</li>
+                        <li>Hôtel du port</li>
+                        <li>Hôtel du port</li>
+                        <li>Hôtel du port</li>
+                        <li>Hôtel du port</li>
+                    </ul>
+                    
                 </section>
                 <section class="populaires">
                     <div class="populaires-title">
@@ -87,6 +112,10 @@
                         </a>
                     </div>
                 </section>
+            </div>
+
+            <section id="activites">
+                <h2>Activités à Marseille</h2>
             </div>
         </main>
         <footer></footer>
