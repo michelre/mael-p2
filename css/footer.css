@@ -1,0 +1,33 @@
+footer {
+  background-color: #f2f2f2;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.footer-sections {
+  display: flex;
+  justify-content: center;
+  height: 163px;
+  padding-bottom: 10px;
+}
+
+.footer-sections h3 {
+  margin-left: 0;
+}
+
+.footer-sections ul {
+  padding-left: 0;
+}
+
+.footer-sections li {
+  padding: 10px;
+}
+
+.footer-section {
+  flex: 1;
+  margin-left: 40px;
+}
+
+.footer-section li {
+  list-style-type: none;
+}

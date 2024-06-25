@@ -12,15 +12,68 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/searchbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
 
 <body>
     <div class="main-container">
-        <header></header>
+        <header class ="navbar">
+            <img src="./images/logo/Booki.png" alt="Logo de Booki">
+            <nav>
+                <ul>
+                     <li><a href="#">Hébergements</a></li>
+                    <li><a href="#">Activités</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="searchbar">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre-ville ou en pleine nature</p>
+            <form class="search-form">
+                <input type="text" placeholder="Marseille, France">
+                <button>
+                    <span>Rechercher</span>
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </section>
+        <div class="filters">
+            <h3>Filtres</h3>
+                <div class="icon">
+                    <i class="fas fa-money-bill-wave"></i>
+                </div>
+                    <p>Économique</p>
+                <div class="icon">
+                    <i class="fas fa-child"></i>
+                </div>
+                    <p>Familial</p>
+                <div class="icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                    <p>Romantique</p>
+                <div class="icon">
+                    <i class="fas fa-fire"></i>
+                </div>
+                    <p>Nos pépites</p>
+
+
+
+
+        </div>
         <main>
             <div class="hebergements-and-populaires">
-                <section class="hebergements">
-
+                <section class="hebergements" id=" hebergements">
+                    <h2>Hébergements à Marseille</h2>
+                    <ul class="hebergements-liste">
+                        <li>Hôtel du port</li>
+                        <li>Hôtel Chez Amina</li>
+                        <li>Hôtel Les mouettes</li>
+                        <li>Hôtel de la mer</li>
+                        <li>Auberge La Canebière</li>
+                        <li>Auberge Le Panier</li>
+                    </ul>
                 </section>
                 <section class="populaires">
                     <div class="populaires-title">
@@ -89,7 +142,32 @@
                 </section>
             </div>
         </main>
-        <footer></footer>
+        <footer>
+            <div class ="footer-sections">
+                <section class="footer-section">
+                    <h4>À propos</h4>
+                    <ul>
+                        <li><a href="#">Fonctionnement du site</a></li>
+                        <li><a href="#">Conditions générales </a></li>
+                        <li><a href="#">Données et confidentialité</a></li>
+                    </ul>
+                </section>
+                <section class="footer-section">
+                    <h4>Nos hébergements</h4>
+                    <ul>
+                        <li><a href="#">Charte qualité</a></li>
+                        <li><a href="#">Proposer votre hôtel</a></li>
+                    </ul>
+                </section>
+                <section class="footer-section">
+                    <h4>Assistance</h4>
+                    <ul>
+                        <li><a href="#">Centre d’aide</a></li>
+                        <li><a href="#">Nous contacter</a></li>
+                    </ul>
+                </section>
+            </div>
+        </footer>
     </div>
 </body>
 
