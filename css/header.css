@@ -2,10 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: -10px;
 }
 
 img[src="./images/logo/Booki.png"] {
+  margin-top: 10px;
   width: 61.09px;
   height: 19px;
 }
@@ -18,7 +19,7 @@ img[src="./images/logo/Booki.png"] {
 }
 
 .navbar nav ul li {
-  margin-left: 20px;
+  margin-left: 50px;
   position: relative;
 }
 

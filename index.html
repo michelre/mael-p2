@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/searchbar.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/infos.css">
+    <link rel="stylesheet" href="./css/filters.css">
 </head>
 
 <body>
@@ -30,39 +32,40 @@
         </header>
         <section class="searchbar">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre-ville ou en pleine nature</p>
-            <form class="search-form">
+                <p>En plein centre-ville ou en pleine nature</p>
+            <div class="searchbar-display">
+                <span class="icon-wrapper"><i class="fa-solid fa-location-dot"></i></span>
+                <form class="search-form">
                 <input type="text" placeholder="Marseille, France">
-                <button>
-                    <span>Rechercher</span>
-                    <i class="fas fa-search"></i>
-                </button>
-            </form>
+                    <button id="search-btn-desktop">Rechercher</button>
+                    <i id="search-btn-mobile" class="fas fa-search"></i>
+                </form>
+            </div>
         </section>
-        <div class="filters">
+        <section class="filters">
             <h3>Filtres</h3>
-                <div class="icon">
-                    <i class="fas fa-money-bill-wave"></i>
-                </div>
-                    <p>Économique</p>
-                <div class="icon">
-                    <i class="fas fa-child"></i>
-                </div>
-                    <p>Familial</p>
-                <div class="icon">
-                    <i class="fas fa-heart"></i>
-                </div>
-                    <p>Romantique</p>
-                <div class="icon">
-                    <i class="fas fa-fire"></i>
-                </div>
-                    <p>Nos pépites</p>
-
-
-
-
-        </div>
+            <div class="filter-item">
+                <i class="fas fa-money-bill-wave"></i>
+                <p>Économique</p>
+            </div>
+            <div class="filter-item">
+                <i class="fas fa-child"></i>
+                <p>Familial</p>
+            </div>
+            <div class="filter-item">
+                <i class="fas fa-heart"></i>
+                <p>Romantique</p>
+            </div>
+            <div class="filter-item">
+                <i class="fas fa-fire"></i>
+                <p>Nos pépites</p>
+            </div>
+        </section>
         <main>
+            <div class="info-tooltip">
+            <i class="fas fa-info fa-xs"></i>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
             <div class="hebergements-and-populaires">
                 <section class="hebergements" id=" hebergements">
                     <h2>Hébergements à Marseille</h2>
@@ -74,6 +77,7 @@
                         <li>Auberge La Canebière</li>
                         <li>Auberge Le Panier</li>
                     </ul>
+                    <h3>Afficher plus</h3>
                 </section>
                 <section class="populaires">
                     <div class="populaires-title">

@@ -1,0 +1,15 @@
+.info-tooltip {
+  display: flex;
+  align-items: center;
+  gap : 10px;
+}
+
+.fas.fa-info.fa-xs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid #D9D9D9;
+}
