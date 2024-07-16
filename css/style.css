@@ -1,3 +1,4 @@
+
 /****** General ***********/
 * {
   font-family: 'Raleway', sans-serif;
@@ -77,6 +78,47 @@ a {
   width: 65%;
 }
 
+.hebergements-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hebergements-liste .card-txt li {
+  list-style-type: none;
+}
+.hebergements-liste .hebergements-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.hebergements-cards .card {
+  width: 250.33;
+  height: 64.25;
+  margin: 10px;
+}
+
+.hebergements-cards .card img {
+  width: 250.33;
+  height: 124px;
+  border-radius: 20px 20px 0 0;
+}
+
+.hebergements-cards .card-subtitle {
+  margin: 0;
+}
+
+.hebergements-cards .card-rating {
+  margin-bottom: 5px;
+}
+
+.hebergements-cards .card-title {
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+
 /****** Populaires ***********/
 .populaires {
   width: 32%;
@@ -122,7 +164,12 @@ a {
   margin-bottom: 5px;
 }
 
-
+/****** Activités ***********/
+.activities-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */

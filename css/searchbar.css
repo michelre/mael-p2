@@ -1,3 +1,4 @@
+
 .searchbar-display {
   display: flex;
   align-items: center;
@@ -28,12 +29,20 @@
 }
 
 .icon-wrapper {
-  background-color: #D9D9D9;
-  border-radius: 15px 0 0 15px;
-  background-color: #D9D9D9;
+    border-radius: 15px 0 0 15px;
+    background-color: #F2F2F2;
+    width: 50px;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .fa-location-dot {
   color: black;
 
+}
+
+#search-btn-mobile {
+  display: none;
 }
