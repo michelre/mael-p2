@@ -36,6 +36,9 @@
     white-space: nowrap;
 }
 
+.fa-money-bill-wave, .fa-child, .fa-heart, .fa-fire {
+    color: #0065FC;
+}
 @media screen and (max-width: 768px) {
     .filters-list li {
         width: calc(50% - 10px);
