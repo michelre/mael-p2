@@ -1,4 +1,3 @@
-
 /****** General ***********/
 * {
   font-family: 'Raleway', sans-serif;
@@ -95,6 +94,8 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
+  list-style: none;
+  padding: 0;
 }
 
 .hebergements-cards .card {
@@ -182,6 +183,7 @@ a {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+  list-style: none;
 }
 
 .activities-card img {
@@ -189,6 +191,7 @@ a {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   height: 200px;
+  object-fit: cover;
 }
 
 .activities-card {
