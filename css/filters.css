@@ -25,6 +25,7 @@
     flex-wrap: wrap;
     align-items: center;
     margin: 0;
+    font-weight: bold;
 }
 
 .filters-list li {
@@ -39,12 +40,26 @@
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-fire {
     color: #0065FC;
 }
+
+
+.filters-list a {
+    transition: background .250s linear;
+}
+
+.filters-list a:hover {
+    background: #DEEBFF;    
+}
+
 @media screen and (max-width: 768px) {
     .filters-list li {
         width: calc(50% - 10px);
         margin-right: 10px;
         margin-bottom: 10px;
-        font-size: 14px;
+        font-size: 13px;
+    }
+
+    .filter-item {
+        padding: 16px 15px;
     }
 
     .filters {
