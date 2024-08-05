@@ -267,4 +267,20 @@ a {
     order: -1;
   }
 
+  .main-container {
+    padding: 0;
+  }
+
+  .hebergements-and-populaires section {
+    padding: 20px;
+    border-radius: 0;
+  }
+
+  .hebergements-and-populaires section.hebergements {
+    background-color: white;
+  }
+
+  .hebergements-cards .card {
+    margin: 0;
+  }
 }

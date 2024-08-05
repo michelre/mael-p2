@@ -1,11 +1,19 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav a{
+    width: 100%;
+    display: block;
+    height: 100%;
+    padding: 15px 0;
+    box-sizing: border-box;
 }
 
 img[src="./images/logo/Booki.png"] {
-  margin-top: 10px;
+  padding: 30px 0;
   width: 61.09px;
   height: 19px;
 }
@@ -44,14 +52,31 @@ img[src="./images/logo/Booki.png"] {
 }
 
 @media screen and (max-width: 768px) {
-  img[src="./images/logo/Booki.png"] {
 
-    }
-  .navbar a {
-
+  .searchbar {
+    padding: 20px;
   }
 
-  .h1, p {
-    white-space: nowrap;
+  nav {
+    width: 100%;
+  }
+
+  img[src="./images/logo/Booki.png"] {
+    margin: auto;
+  }
+
+  .navbar nav ul li  {
+    width: 50%;
+    margin: 0;
+    text-align: center;
+    border-bottom: 2px solid #F2F2F2;
+  }
+
+  .navbar nav ul li::before {
+    top: 100%;
+  }
+
+  .h1 {
+    font-size: 22px;
   }
 }

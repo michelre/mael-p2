@@ -20,6 +20,7 @@
 </head>
 
 <body>
+    <!-- header -->
     <div class="main-container">
         <header class="navbar">
             <img src="./images/logo/Booki.png" alt="Logo de Booki">
@@ -30,6 +31,7 @@
                 </ul>
             </nav>
         </header>
+        <!-- searchbar -->
         <section class="searchbar">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre-ville ou en pleine nature</p>
@@ -37,11 +39,14 @@
                 <span class="icon-wrapper"><i class="fa-solid fa-location-dot"></i></span>
                 <form class="search-form">
                     <input type="text" placeholder="Marseille, France">
-                    <button id="search-btn-desktop">Rechercher</button>
-                    <i id="search-btn-mobile" class="fas fa-search"></i>
+                    <button id="search-btn-desktop">
+                        <span>Rechercher</span>
+                        <i id="search-btn-mobile" class="fas fa-search"></i>
+                    </button>
                 </form>
             </div>
         </section>
+        <!-- filters -->
         <section class="filters">
             <h3>Filtres</h3>
             <ul class="filters-list">
@@ -70,12 +75,12 @@
                     </div>
                 </li>
             </ul>
-        </section>
-        <main>
             <div class="info-tooltip">
                 <i class="fas fa-info fa-xs"></i>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
+        </section>
+        <main>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
                     <div class="hebergements-title">
@@ -337,6 +342,7 @@
         </main>
         <footer>
             <div class="footer-sections">
+                <!-- footer -->
                 <section class="footer-section">
                     <h4>À propos</h4>
                     <ul>
